@@ -1,6 +1,6 @@
 # RentHouse API（後端）
 
-RentHouse API 是一套租屋平台的後端系統，負責提供完整的 RESTful API，支援前端 Angular 應用進行資料存取與業務邏輯處理。
+RentHouse API 是專為次世代租屋平台打造的後端系統。本專案由 3 人團隊採敏捷協作開發，以 C# ASP.NET Core 建構高擴充性的 RESTful API。系統無縫對接前端 Angular 應用，除了負責核心業務邏輯與高效能的資料存取，更深度整合了 AI 智慧媒合引擎，提供精準的租屋配對服務。
 
 本專案採用 **ASP.NET Core Web API** 建構，並結合 **JWT 身分驗證、資料庫管理、圖片上傳、媒合系統與通知服務**，打造完整的租屋平台後端架構。
 https://github.com/lai88820/RentHouse/tree/dev(Angular前端Git)
