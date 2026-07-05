@@ -1,49 +1,48 @@
-# RentHouse API（後端）
+# RentHouse API (AI 智慧共居房屋媒合系統 後端)
 
-RentHouse API 是專為次世代租屋平台打造的後端系統。本專案由 3 人團隊採敏捷協作開發，以 C# ASP.NET Core 建構高擴充性的 RESTful API。系統無縫對接前端 Angular 應用，除了負責核心業務邏輯與高效能的資料存取，更深度整合了 AI 智慧媒合引擎，提供精準的租屋配對服務。
+RentHouse API 是專為次世代租屋平台打造的核心後端系統。本專案由 3 人團隊採敏捷協作開發，以 **C# ASP.NET Core** 建構高擴充性的 RESTful API。系統無縫對接前端 Angular 應用，除了負責核心業務邏輯與高效能的資料存取，更深度整合了 **AI 智慧媒合引擎**，提供精準的租屋配對服務。
 
-本專案採用 **ASP.NET Core Web API** 建構，並結合 **JWT 身分驗證、資料庫管理、圖片上傳、媒合系統與通知服務**，打造完整的租屋平台後端架構。
-https://github.com/lai88820/RentHouse/tree/dev(Angular前端Git)
-https://drive.google.com/file/d/1Pmr0WVPEQpz3UOtleiwPOsqHCDLucNbu/view?usp=drive_link(實機影片)
----
+本專案結合了 **JWT 身分驗證、關聯式資料庫管理、圖片上傳與通知服務**，打造出具備高穩定性與容錯能力的完整租屋平台後端架構。
 
-## 系統簡介
-
-本系統為 RentHouse 平台的核心後端服務，負責處理以下核心業務：
-
-- 使用者身份驗證與授權（JWT）
-- 會員資料管理
-- 房屋資料 CRUD
-- 房屋媒合與推薦邏輯
-- 圖片上傳與檔案管理
-- 通知與系統訊息
-- 與前端 Angular 進行 API 串接
-- 房屋的AI媒合
+## 專案連結與展示 (Demo & Links)
+* **[點此觀看系統實機運作影片 (Google Drive)](https://drive.google.com/file/d/1Pmr0WVPEQpz3UOtleiwPOsqHCDLucNbu/view?usp=drive_link)**
+* **[點此前往前端 Angular UI 專案 (GitHub)](https://github.com/lai88820/RentHouse/tree/dev)**
 
 ---
 
-## 技術架構
+## 團隊成員與分工 (Team & Roles)
+本專案由 3 人團隊共同研發，採前後端分離架構：
+* **[你的名字] (Backend & AI Module)：** 負責 C# 後端 API 開發、Entity Framework Core 資料庫建置，以及主導 Google Gemini AI 核心串接與效能優化。
+* **[隊友 A 名字] (Frontend Developer)：** 負責 Angular 前端畫面實作、UI/UX 設計與狀態管理。
+* **[隊友 B 名字] (可依實際狀況填寫，例如：Database / QA / PM)：** 負責...
+
+---
+
+## 核心技術亮點 (Core Highlights)
+- **AI 深度評估模組：** 跳脫傳統條件篩選，整合 AI 進行自然語言處理，交叉比對租客作息與房屋公約，自動產出精準的房屋匹配講評。
+- **高效能與高容錯架構：** 實作 DTO 資料瘦身優化傳輸效能，並具備 API 請求防護機制，確保系統在高負載下依然穩定運行。
+- **嚴謹的安全機制：** 導入 JWT Token 驗證與 Role-based Authorization，確保會員、房東與管理者權限分明。
+
+---
+
+## 技術架構 (Tech Stack)
 
 ### 後端技術
-- ASP.NET Core Web API
-- C#
-- Entity Framework Core
-- SQL Server
-- JWT Authentication
-- RESTful API 架構
+- **Framework:** ASP.NET Core Web API (C#)
+- **Database:** SQL Server, Entity Framework Core
+- **Authentication:** JWT (JSON Web Token)
+- **Architecture:** RESTful API
 
 ### 系統設計概念
-- 前後端分離架構（Frontend / Backend Separation）
-- 分層式架構（Controller / Service / Repository）
-- Token-based Authentication（JWT）
-- 模組化功能設計
-- 可擴充 API 架構
+- 前後端分離架構 (Frontend / Backend Separation)
+- 分層式架構 (Controller / Service / Repository)
+- 模組化功能設計與高擴充性 API
 
 ---
 
-## 系統架構
+## 系統架構圖
 
-```
+```text
 Frontend (Angular 21)
         ↓
 REST API (ASP.NET Core)
@@ -53,177 +52,107 @@ Service Layer
 Repository Layer
         ↓
 SQL Server Database
-```
+主要功能模組
+1. 身分驗證系統 (Auth)
+使用者註冊 / 登入
 
----
+JWT Token 發放與驗證 Middleware
 
-## 主要功能模組
+角色權限控管 (Role-based Authorization)
 
-### 1. 身分驗證系統
-- 使用者註冊 / 登入
-- JWT Token 驗證
-- Role-based Authorization（會員 / 房東 / 管理者）
-- Token 驗證 Middleware
+2. 會員系統 (Users)
+使用者資料 CRUD 與狀態管理
 
----
+個人資訊更新與頭像上傳處理
 
-### 2. 會員系統
-- 使用者資料管理
-- 個人資訊更新
-- 頭像上傳
-- 使用者狀態管理
+3. 房屋管理系統 (Houses)
+房屋物件新增 / 編輯 / 刪除
 
----
+房屋列表查詢與詳細資訊展示
 
-### 3. 房屋管理系統
-- 房屋新增 / 編輯 / 刪除
-- 房屋列表查詢
-- 房屋詳細資訊
-- 房屋分類（如坪數、價格、地區）
+多維度房屋分類 (坪數、價格、地區)
 
----
+4. 智慧房屋媒合系統 (Match)
+AI 深度媒合運算： 結合外部 AI API 進行高階語意配對。
 
-### 4. 房屋媒合系統
-- 使用條件進行房源媒合
-- 簡易推薦邏輯（依需求條件篩選）
-- 使用者偏好匹配
-- 增加了AI媒合
+條件與偏好篩選： 依據使用者需求進行快速推薦邏輯運算。
 
----
+5. 圖片與檔案系統 (Upload)
+房屋實景圖片上傳
 
-### 5. 圖片與檔案系統
-- 房屋圖片上傳
-- 使用者頭像上傳
-- 檔案儲存與路徑管理
+使用者頭像上傳與伺服器路徑管理
 
----
+6. 通知系統 (Notifications)
+系統公告與媒合結果通知
 
-### 6. 通知系統
-- 系統通知（公告 / 媒合結果）
-- 使用者訊息提示
-- 可擴充即時通知（SignalR 可延伸）
+具備可擴充即時通知之底層設計 (預留 SignalR 介面)
 
----
-
-## API 架構設計
-
-### Auth
-```
+API 架構設計
+Auth
+HTTP
 POST   /api/auth/login
 POST   /api/auth/register
 GET    /api/auth/profile
-```
-
-### Users
-```
+Users
+HTTP
 GET    /api/users
 GET    /api/users/{id}
 PUT    /api/users/{id}
-```
-
-### Houses
-```
+Houses
+HTTP
 GET    /api/houses
 GET    /api/houses/{id}
 POST   /api/houses
 PUT    /api/houses/{id}
 DELETE /api/houses/{id}
-```
-
-### Match
-```
+Match
+HTTP
 POST   /api/match/search
 POST   /api/match/recommend
-```
-
-### Upload
-```
+Upload
+HTTP
 POST   /api/upload/image
 POST   /api/upload/avatar
-```
+資料庫設計 (Database)
+主要資料表 (Entity) 包含：
 
----
+Users (使用者)
 
-## 資料庫設計概念
+Houses (房屋)
 
-主要資料表包含：
+HouseImages (房屋圖片)
 
-- Users（使用者）
-- Houses（房屋）
-- HouseImages（房屋圖片）
-- Matches（媒合紀錄）
-- Notifications（通知）
-- Roles（權限）
+Matches (媒合紀錄)
 
----
+Notifications (通知)
 
-## 開發環境
+Roles (權限)
 
-啟動專案：
+開發環境啟動指南
+啟動專案 (CLI)：
 
-```bash
+Bash
 dotnet run
-```
+或使用 Visual Studio (IIS Express / Kestrel) 啟動。
 
-或使用 Visual Studio：
+API 測試工具
+建議使用 Postman，或透過開發環境內建之 Swagger UI：
 
-```
-IIS Express / Kestrel
-```
-
----
-
-## API 測試工具
-
-建議使用：
-
-- Postman
-- Swagger UI（開發環境）
-
-Swagger 預設：
-
-```
 https://localhost:{port}/swagger
-```
+安全機制 (Security)
+JWT 驗證： API 路由全面受 Token 驗證保護。
 
----
+密碼加密： 採用 Password Hash，拒絕明碼儲存。
 
-## 安全機制
+CORS 控制： 嚴格限制跨網域請求來源。
 
-- JWT Token 驗證
-- Password Hash（不可明碼儲存）
-- Role-based Authorization
-- CORS 控制
-- API 權限驗證 Middleware
+未來優化方向 (Future Work)
+[ ] 導入 SignalR 實作即時聊天與通知
 
----
+[ ] 導入 Redis 快取優化熱門房源查詢效能
 
-## 專案特色
+[ ] 導入 ElasticSearch 提升房源搜尋精準度
 
-- 完整前後端分離架構
-- RESTful API 標準設計
-- 可擴充媒合系統
-- 模組化 Service 架構
-- 支援圖片與檔案管理
-- JWT 安全機制
-- 可延伸即時通知（SignalR）
+[ ] 將應用程式 Docker 化，建置 CI/CD 自動部署流程
 
----
-
-## 未來優化方向
-
-- [ ] 導入 SignalR（即時聊天 / 通知）
-- [ ] Redis 快取優化查詢
-- [ ] ElasticSearch 房源搜尋優化
-- [ ] 行為分析與推薦系統
-- [ ] Docker 化部署
-- [ ] CI/CD 自動部署
-
----
-
-## 開發者說明
-
-RentHouse Backend API  
-Powered by ASP.NET Core 🚀
-
-本專案為 RentHouse 租屋平台核心後端服務，負責所有商業邏輯與資料處理。
+RentHouse Backend API — Powered by ASP.NET Core
