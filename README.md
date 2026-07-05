@@ -7,6 +7,22 @@ RentHouse API 是專為次世代租屋平台打造的核心後端系統。本專
 ## 專案連結與展示 (Demo & Links)
 * **[點此觀看系統實機運作影片 (Google Drive)](https://drive.google.com/file/d/1Pmr0WVPEQpz3UOtleiwPOsqHCDLucNbu/view?usp=drive_link)**
 * **[點此前往前端 Angular UI 專案 (GitHub)](https://github.com/lai88820/RentHouse/tree/dev)**
+* **後端照片<img width="1429" height="911" alt="image" src="https://github.com/user-attachments/assets/b53000a3-f6a1-41b5-9283-9654702172f7" />
+        <img width="1492" height="902" alt="image" src="https://github.com/user-attachments/assets/87a00cf9-dd94-4198-a488-3b456085fee8" />
+        <img width="1444" height="908" alt="image" src="https://github.com/user-attachments/assets/d5ce6789-eeff-41dd-992c-2fa7d36ebcf4" />
+        <img width="1577" height="733" alt="image" src="https://github.com/user-attachments/assets/bd16932e-bc5a-4030-aa48-1ab2cd2d917d" />
+        <img width="1461" height="726" alt="image" src="https://github.com/user-attachments/assets/80767b6b-f867-4bbc-a4d2-bd354ec1c605" />
+        <img width="1560" height="726" alt="image" src="https://github.com/user-attachments/assets/4e69de6c-cad5-4661-9bb6-1043bf5a8d8d" />
+* **前端照片<img width="1594" height="900" alt="image" src="https://github.com/user-attachments/assets/f913ca22-41b6-4f0f-8742-d14335852559" />
+            <img width="1615" height="923" alt="image" src="https://github.com/user-attachments/assets/22dc5d25-54fc-427a-85ae-3a477a910fe0" />
+            <img width="1658" height="905" alt="image" src="https://github.com/user-attachments/assets/a9f06f23-caec-499c-8fc2-5722571da08c" />
+
+
+
+
+
+
+
 
 ---
 
