@@ -28,9 +28,9 @@ RentHouse API 是專為次世代租屋平台打造的核心後端系統。本專
 
 ## 團隊成員與分工 (Team & Roles)
 本專案由 3 人團隊共同研發，採前後端分離架構：
-* **[你的名字] (Backend & AI Module)：** 負責 C# 後端 API 開發、Entity Framework Core 資料庫建置，以及主導 Google Gemini AI 核心串接與效能優化。
-* **[隊友 A 名字] (Frontend Developer)：** 負責 Angular 前端畫面實作、UI/UX 設計與狀態管理。
-* **[隊友 B 名字] (可依實際狀況填寫，例如：Database / QA / PM)：** 負責...
+* **[賴重勻] (Backend & AI Module)：** 負責 C# 後端 API 開發、部分前端、房屋上下架審核、Entity Framework Core 資料庫建置，以及主導 Google Gemini AI 核心串接與效能優化。
+* **[組員 A ] (Frontend Developer)：** 負責 Angular 前端畫面實作、UI/UX 設計與狀態管理。
+* **[組員 B ] (可依實際狀況填寫，例如：Database / QA / PM)：** 負責...
 
 ---
 
